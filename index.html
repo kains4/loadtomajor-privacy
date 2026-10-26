@@ -36,7 +36,7 @@
   <p>이 방침은 Android·iOS 게임 「까까머리 메이저리거」(이하 "게임")에 적용됩니다.</p>
 
   <h2>1. 수집하는 정보</h2>
-  <p>게임은 이름, 이메일, 전화번호, 연락처, 사진, 정확한 위치를 수집하지 않습니다. 회원가입이나 로그인도 없습니다. iOS 광고 식별자(IDFA)는 쓰지 않으며 추적 허용을 묻지 않습니다.</p>
+  <p>게임은 이름, 이메일, 전화번호, 연락처, 사진, 정확한 위치를 수집하지 않습니다. 회원가입이나 로그인도 없습니다. iOS에서는 처음 켤 때 '추적 허용'을 묻고, 허용한 경우에만 광고 식별자(IDFA)를 맞춤 광고에 씁니다.</p>
   <p>게임을 고치고 다듬기 위해 아래 이용 통계를 자동으로 모읍니다. 이 정보만으로는 이용자가 누구인지 알 수 없습니다.</p>
   <ul>
     <li>앱 설치마다 무작위로 만들어지는 앱 인스턴스 ID</li>
@@ -49,12 +49,12 @@
   <h2>1-1. 광고와 행태정보</h2>
   <p>'광고 제거'를 사지 않은 이용자에게는 Google AdMob 광고가 나옵니다(쉬는 순간의 전면 광고, 이용자가 고르는 보상형 광고). AdMob은 광고를 보여 주고 효과를 재고 부정 클릭을 막기 위해 아래 정보를 자동으로 모아 Google에 보냅니다.</p>
   <ul>
-    <li>기기·광고 식별자: Android 광고 ID, 앱 세트 ID, iOS 앱·개발자별 식별자(IDFA 제외)</li>
+    <li>기기·광고 식별자: Android 광고 ID, 앱 세트 ID, iOS 앱·개발자별 식별자, iOS 광고 식별자(IDFA — 추적을 허용한 경우만)</li>
     <li>광고·앱 이용 기록: 본 광고, 앱 실행·누름·영상 시청</li>
     <li>IP 주소로 추정한 대략적 위치</li>
     <li>진단 정보: 앱 실행 시간, 멈춤, 오류 기록</li>
   </ul>
-  <p>이 중 광고 ID와 이용 기록은 이용자의 관심사에 맞춘 광고(맞춤 광고)에 쓰일 수 있는 행태정보입니다. 거부하려면 Android는 설정 → 개인정보 보호 → 광고에서 광고 ID를 삭제하거나 재설정하면 되고, '광고 제거'를 사면 광고 SDK가 더 이상 시작되지 않아 이 정보가 전송되지 않습니다. 광고 내용은 전체 이용가 등급으로 제한합니다.</p>
+  <p>이 중 광고 ID와 이용 기록은 이용자의 관심사에 맞춘 광고(맞춤 광고)에 쓰일 수 있는 행태정보입니다. 거부하려면 Android는 설정 → 개인정보 보호 → 광고에서 광고 ID를 삭제하거나 재설정하면 되고, iOS는 추적 허용 창에서 '앱에 추적 금지 요청'을 고르거나 설정 → 개인정보 보호 및 보안 → 추적에서 끄면 되며, '광고 제거'를 사면 광고 SDK가 더 이상 시작되지 않아 이 정보가 전송되지 않습니다. 광고 내용은 전체 이용가 등급으로 제한합니다.</p>
 
   <h2>2. 기기 안에 저장하는 정보</h2>
   <ul>
@@ -97,7 +97,7 @@
     <h2>Privacy Policy (English)</h2>
     <p>Effective October 26, 2026 (ads and the ad-free purchase added). "까까머리 메이저리거" (the "Game") does not collect names, contact details, photos, precise location or advertising IDs. There is no account or login.</p>
     <p>Game saves, sound volumes and settings are stored only on your device and are deleted when you uninstall the app.</p>
-    <p>The Game is free with Google AdMob ads (break ads and optional rewarded ads); buying "광고 제거" (ad-free) removes them and stops the ad SDK. AdMob collects device and advertising identifiers (Android advertising ID, app set ID; never the iOS IDFA, and the Game never asks for tracking permission), ad and app interactions, approximate location from the IP address and diagnostics, for advertising, measurement and fraud prevention. Android users can delete or reset the advertising ID in system settings. Ads are limited to content rated for everyone.</p>
+    <p>The Game is free with Google AdMob ads (break ads and optional rewarded ads); buying "광고 제거" (ad-free) removes them and stops the ad SDK. AdMob collects device and advertising identifiers (Android advertising ID, app set ID; the iOS IDFA only if you allow tracking when asked), ad and app interactions, approximate location from the IP address and diagnostics, for advertising, measurement and fraud prevention. Android users can delete or reset the advertising ID in system settings. Ads are limited to content rated for everyone.</p>
     <p>To improve the Game, it sends anonymous usage statistics to Google Analytics for Firebase (Google LLC, United States): a random app instance ID, screens viewed and game milestones, device model, OS and app version, language, and country/city estimated from the IP address. This data is used only for analytics, never for advertising, is not shared with anyone else, and is deleted automatically after 2 months (aggregate totals may remain). Uninstalling the app stops it; contact us if you want it deleted.</p>
     <p>The rating prompt is shown and handled by Google Play or the App Store. The Game does not receive your rating or account details.</p>
     <p>Contact: <a href="mailto:gavenaghi@gmail.com">gavenaghi@gmail.com</a></p>
